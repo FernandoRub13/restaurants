@@ -1,0 +1,23 @@
+extends ../layout 
+
+block content 
+  a(href="/restaurants") Back 
+  h1 update restaurants 
+  form(action=`/restaurants/${restaurant.id}/update` method='post')
+    label(for='id') ID:
+    input#id(type='text' name='id' value=restaurant.id)
+    br
+    label(for='name') Name:
+    input#id(type='text' name='name' value=restaurant.name)
+    br
+    label(for='description') Description:
+    input#id(type='text' name='description' value=restaurant.description)
+    br
+    label(for='lat') Latitud:
+    input#id(type='text' name='lat' value=restaurant.location[0])
+    br
+    label(for='lng') Longitud:
+    input#id(type='text' name='lng' value=restaurant.location[1])
+    br
+    br
+    input(type="submit", value="Ok")

@@ -12,11 +12,14 @@ var mymap = L.map('mapid').setView([19.29759,-99.22428], 13);
 	L.marker([19.29759,-99.22428]).addTo(mymap)
 		.bindPopup("<b>¡La mejor casa del mundo!</b><br />I am a popup.").openPopup();
 
-	L.circle([19.29759,-99.22428], 500, {
-		color: 'red',
-		fillColor: '#f03',
-		fillOpacity: 0.5
-	}).addTo(mymap).bindPopup("I am a circle.");
+	L.marker([19.29759,-99.22440]).addTo(mymap)
+		.bindPopup("2da casa.").openPopup();
+
+	// L.circle([19.29759,-99.22428], 500, {
+	// 	color: 'red',
+	// 	fillColor: '#f03',
+	// 	fillOpacity: 0.5
+	// }).addTo(mymap).bindPopup("I am a circle.");
 
 	// L.polygon([
 	// 	[51.509, -0.08],
