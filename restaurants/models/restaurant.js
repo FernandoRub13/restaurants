@@ -35,7 +35,7 @@ Restaurant.removeById = function (aRestId) {
 var a = new Restaurant (1, 'Los comalitos', 'Ven y diviertete en familia', [19.29788,-99.22555]);
 var b = new Restaurant (2, 'Tacos don sucio', 'Disfruta de los mejore s tacos', [19.29940,-99.22254]);
 
-Restaurant.add(a);
-Restaurant.add(b);
+// Restaurant.add(a);
+// Restaurant.add(b);
 
 module.exports = Restaurant;
